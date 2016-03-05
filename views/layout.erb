@@ -3,21 +3,38 @@
 <head>
   <meta charset='UTF-8'>
   <title>LinkTag®</title>
-  <link rel="stylesheet" type="text/css" href="public/style.css">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
-  <h1>LinkTag®</h1>
-  <h2>Bookmarks are for mainstream people</h2>
+  <header> 
+    <nav>
+      
+      <div class="go-left">
+        <div class="logo">LinkTag® bookmarks are for mainstream people</div>
+      </div>
 
-  <ul class="pure-menu-list">
-    <li><a href="/linktags/new">Add</a></li>
-    <li><a href="/linktags">View</a></li>
-  </ul>
+      <div class="go-right">
+        <ul>
+          <li><a href="/linktags">VIEW</a></li>
+          <li><a href="/linktags/new">ADD</a></li>
+        </ul>
+      </div>
 
-  <%= yield %>
+    </nav>
+  </header>
+
+  <main>
+  
+    <%= yield %>
+    
+  </main>
+
+  <footer>
+    <p>2016 - © All Rights Reserved - LinkTag, Ltd. - WestTollCross, 22, Edinburgh, UK - Designed & Developed by <a href="http://intermundi.it/francesco/">Francesco Palma</a></p>
+  </footer>
 
 </body>
-
 </html>
