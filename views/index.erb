@@ -1,0 +1,18 @@
+<% for linktag in @linktags %>
+
+  <ul>
+    <li>URL: <%= linktag.url %></li>
+    <li>Name: <%= linktag.name %></li>
+    <li>Genre: <%= linktag.genre %></li>
+    <li>Description: <%= linktag.description %></li>
+    <li><a href="/linktags/<%= linktag.id %>/edit">Edit LinkTag</a></li>
+    <li>
+
+      <form action="/linktags/<%= linktag.id %>/delete" method="post">
+        <input type="submit" value="Delete LinkTag">
+      </form>
+
+    </li>
+  </ul>
+
+<% end %>

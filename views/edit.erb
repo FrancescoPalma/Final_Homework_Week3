@@ -1,0 +1,23 @@
+<h2>Edit Your LinkTag</h2>
+
+<form action="/linktags/<%= @linktag.id %>" method="post">
+  
+  <fieldset>
+      <legend>Edit LinkTag</legend>
+  
+      <label>URL:</label>
+      <input id="urlInput" type="url" name="url" placeholder="e.g. http://google.co.uk" value="<%= @linktag.url %>">
+
+      <label>Name:</label>
+      <input id="titleInput" type="text" name="name" placeholder="e.g. Google" value="<%= @linktag.name %>">
+
+      <label>Genre:</label>
+      <input id="genreInput" type="text" name="genre" placeholder="e.g. Search Engine" value="<%= @linktag.genre %>">
+
+      <label>Description:</label>
+      <input id="descriptionInput" type="text" name="description" placeholder="e.g. Where to look for info" value="<%= @linktag.description %>">
+  
+      <input type="submit" value="Update Your LinkTag">
+    </fieldset>
+
+</form>
