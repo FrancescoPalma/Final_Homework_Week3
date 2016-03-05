@@ -1,18 +1,19 @@
-/* Homepage */
-
 body {
   margin: 0; 
   padding: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
 }
 
 header {
-  height: 80px;
-  background-color: cornflowerblue;
+  height: 60px;
+  background-color: white;
 }
 
 nav {
-  height: 80px;
-  background-color: cornflowerblue;
+  height: 60px;
+  background-color: white;
 }
 
 .go-left {
@@ -20,8 +21,8 @@ nav {
 }
 
 .logo {
-  color: snow;
-  line-height: 80px;
+  color: cornflowerblue;
+  line-height: 75px;
   margin-left: 20px;
   font-size: 35px;
   font-weight: 500;
@@ -36,7 +37,7 @@ nav ul {
   padding-left: 0;  
   margin: 0;
   list-style-type: none;
-  line-height: 80px;
+  line-height: 75px;
 }
 
 nav ul li {
@@ -46,25 +47,36 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: snow;
+  color: cornflowerblue;
   font-size: 20px;
   font-weight: 100;
 }
 
 main {
   background-color: royalblue;
+  height: 100%;
+}
+
+h2 {
+  color: snow;
+  font-size: 20px;
+  font-family: 'Arial';
+  margin-left: 20px;
 }
 
 footer {
   text-align: center;
   font-size: 15px;
-  line-height: 50px;
+  line-height: 25px;
   height: 50px;
-  background-color: blue;
-  color: antiquewhite;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
 }
 
 footer a {
   text-decoration: none;
-  color: steelblue;
+  color: deepskyblue;
 }
